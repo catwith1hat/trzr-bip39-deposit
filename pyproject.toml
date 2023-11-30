@@ -1,0 +1,13 @@
+[project]
+name = "trzr-bip39-deposit"
+version = "0.0.1"
+dependencies = [
+    "trezor"
+]
+[tool.setuptools]
+include-package-data = true
+[tool.setuptools.package-data]
+trzr_bip39_deposit = ["*.txt"]
+
+[project.scripts]
+trzr-bip39-deposit = "trzr_bip39_deposit:main"
