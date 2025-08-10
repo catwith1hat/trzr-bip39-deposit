@@ -33,7 +33,7 @@ def main():
     print("Error: Must supply network as first argument")
     return
   network = sys.argv[1]
-  if network not in ["HOLESKY", "GOERLI", "MAINNET", "SEPOLIA"]:
+  if network not in ["HOLESKY", "GOERLI", "MAINNET", "SEPOLIA", "HOODI"]:
     print("Unrecognized network name")
     return
   with resource_stream('trzr_bip39_deposit', 'english.txt') as f:
